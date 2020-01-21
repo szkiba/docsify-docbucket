@@ -1,4 +1,4 @@
-$docsify.plugins = [].concat(function (hook, vm) {
+$docsify.plugins = [].concat($docsify.plugins, function (hook, vm) {
     hook.init(function () {
 
         if (!window.$docsify.docbucket) {
@@ -18,7 +18,7 @@ $docsify.plugins = [].concat(function (hook, vm) {
         }
 
         if (!window.$docsify.loadNavbar && !window.$docsify.docbucket.noNavbar) {
-            window.$docsify.loadNavbar = "/_navbar.md";
+            window.$docsify.loadNavbar = "_navbar.md";
             if ( !window.$docsify.alias) {
                 window.$docsify.alias = {};
             }
@@ -35,4 +35,4 @@ $docsify.plugins = [].concat(function (hook, vm) {
 
     });
 
-}, $docsify.plugins);
+});
