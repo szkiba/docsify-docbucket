@@ -41,6 +41,28 @@ window.$docsify = {
 }
 ```
 
+### script
+
+The plugin is able to load script (JavaScript) `script.js` from the `doc` repository in the current Bitbucket Server project. You can enable this feature:
+
+```javascript
+window.$docsify = {
+  docbucket: {
+    loadScript : true
+  }
+}
+```
+
+You can also specify other script file name:
+
+```javascript
+window.$docsify = {
+  docbucket: {
+    loadScript : '/;r=doc/plugin.js'
+  }
+}
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/szkiba/docsify-docbucket/blob/master/LICENSE) for details.
