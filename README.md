@@ -4,13 +4,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/szkiba/docsify-docbucket/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/szkiba/docsify-docbucket.svg?style=flat-square)](https://github.com/szkiba/docsify-docbucket/issues)
 
-A [Docsify](https://docsify.js.org) plugin that help building documentation site with [Docsify](https://docsify.js.org) and [Pages for Bitbucket Server](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/771817567/Pages+for+Bitbucket+Server). The plugin require [docsify-bitbucket](https://github.com/szkiba/docsify-bitbucket) plugin as dependency. This plugin works with Bitbucket Server only, Bitbuctek Cloud not supported.
+A [Docsify](https://docsify.js.org) plugin that help building documentation site with [Docsify](https://docsify.js.org) and [Pages for Bitbucket Server](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/771817567/Pages+for+Bitbucket+Server). The plugin require [docsify-bitbucket](https://github.com/szkiba/docsify-bitbucket) plugin as dependency. This plugin works with Bitbucket Server only, Bitbucket Cloud not supported.
 
 ## Installation
 
-Add following script tag to your `index.html` after docsify.
+Add following script tags to your `index.html` after docsify.
 
 ```html
+<script src="//unpkg.com/docsify-bitbucket"></script>
 <script src="//unpkg.com/docsify-docbucket"></script>
 ```
 
