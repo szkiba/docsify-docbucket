@@ -1,4 +1,4 @@
-# docsify-bitbucket
+# docsify-docbucket
 
 [![NPM](https://img.shields.io/npm/v/docsify-docbucket.svg?style=flat-square)](https://www.npmjs.com/package/docsify-docbucket)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/szkiba/docsify-docbucket/blob/master/LICENSE)
