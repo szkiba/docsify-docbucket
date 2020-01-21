@@ -1,0 +1,31 @@
+{
+  "name": "docsify-docbucket",
+  "version": "1.0.0",
+  "description": "A Docsify plugin that help building documentation site with Docsify and Pages for Bitbucket Server",
+  "main": "dist/docsify-docbucket.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szkiba/docsify-docbucket.git"
+  },
+  "keywords": [
+    "docsify",
+    "bitbucket"
+  ],
+  "author": "Ivan Szkiba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szkiba/docsify-docbucket/issues"
+  },
+  "homepage": "https://github.com/szkiba/docsify-docbucket",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
