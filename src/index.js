@@ -1,4 +1,4 @@
-$docsify.plugins = [].concat(function (hook, vm) {
+$docsify.plugins = [].concat($docsify.plugins, function (hook, vm) {
     hook.init(function () {
 
         if (!window.$docsify.docbucket) {
@@ -18,8 +18,8 @@ $docsify.plugins = [].concat(function (hook, vm) {
         }
 
         if (!window.$docsify.loadNavbar && !window.$docsify.docbucket.noNavbar) {
-            window.$docsify.loadNavbar = "/_navbar.md";
-            if ( !window.$docsify.alias) {
+            window.$docsify.loadNavbar = "_navbar.md";
+            if (!window.$docsify.alias) {
                 window.$docsify.alias = {};
             }
             window.$docsify.alias['/_navbar.md'] = window.DocsifyBitbucket.resolve('/;r=doc/_navbar.md');
@@ -33,6 +33,13 @@ $docsify.plugins = [].concat(function (hook, vm) {
             document.getElementsByTagName('head')[0].appendChild(style);
         }
 
+        if (window.$docsify.docbucket.loadScript) {
+            var src = typeof window.$docsify.docbucket.loadScript == 'string' ? window.$docsify.docbucket.loadScript : '/;r=doc/script.js';
+            var script = document.createElement("script");
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("src", window.DocsifyBitbucket.resolve(src));
+            document.getElementsByTagName('body')[0].appendChild(script);
+        }
     });
 
-}, $docsify.plugins);
+});
