@@ -11,8 +11,8 @@ A [Docsify](https://docsify.js.org) plugin that help building documentation site
 Add following script tags to your `index.html` after docsify.
 
 ```html
-<script src="//unpkg.com/docsify-bitbucket"></script>
-<script src="//unpkg.com/docsify-docbucket"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-bitbucket"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-docbucket"></script>
 ```
 
 ## Options
